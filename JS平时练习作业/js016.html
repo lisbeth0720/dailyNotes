@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组-输入员工的信息</title>
+    <script>
+       /* var emps=[];
+        var input="";
+        //赋值表达式的值是等号右边的值！！！
+        while((input=prompt("请输入员工的姓名："))!="exit"){
+        emps[emps.length]=input;
+        }
+        console.log(emps);*/
+       var emps=["程恩","王雪芹","小桐","倩倩","清风"];
+
+       //indexOf() 在arr中查找ename的位置，没找到返回-1
+
+       function indexOf(arr,name){
+           for(var i=0;i<arr.length;i++){
+               if(arr[i]==name){
+                   return i;
+               }
+           }
+            return -1;
+       }
+       console.log(indexOf(emps,"清风"));
+       console.log(indexOf(emps,"沐雪"));
+       console.log(indexOf(emps,"倩倩"));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

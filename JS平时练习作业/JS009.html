@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js</title>
+    <script>
+       function card包饺子(){
+           console.log("step1:和面");
+           console.log("step2:拌馅");
+           console.log("step3:擀皮子");
+       }
+       function card西红柿鸡蛋面(){
+           console.log("step1:摘西红柿");
+           console.log("step2:煎鸡蛋");
+           console.log("step3:擀面条");
+       }
+       function kimi的任务(card){
+           console.log("kimi开始做：");
+           card();
+       }
+       function nuoyi的任务(card){
+           console.log("nuoyi开始做：");
+           card();
+       }
+       kimi的任务(card包饺子);
+       /*函数名后加（），表示立即执行*/
+       /*将函数作为对象传递时，仅仅使用函数名，不用加（）*/
+       nuoyi的任务(card西红柿鸡蛋面);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
