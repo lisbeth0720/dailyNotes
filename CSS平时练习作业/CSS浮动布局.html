@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>布局</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body>
+<div id="top"><h1>Hello everyone! welcome to muxue wang</h1></div>
+<div id="left">
+     <ul>
+         <li>新闻</li>
+         <li>杂志</li>
+         <li>音乐</li>
+         <li>体育</li>
+         <li>美术</li>
+     </ul>
+</div>
+<div id="main"><p style="text-indent:2em;">补全代码
+</p>
+  <p style="text-indent:2em;">&nbsp;</p>
+  <p style="text-indent:2em;">1.下面程序的功能是：将字符数组a中下标值为偶数的元素从小到大排列，其他元素不变。请将标号[1]，[2]，[3]空白处补充完整。</p>
+  <p style="text-indent:2em;">#include &lt;stdio.h&gt;<br />
+    #include&lt;string.h&gt;</p>
+<p style="text-indent:2em;">int main{ </p>
+<p style="text-indent:2em;">char a[]="clanguage",t;    </p>
+  <p style="text-indent:2em;">int i,j,k;
+    k=_[1]_;</p>
+  <p style="text-indent:2em;"> for(i=0;i<=k-2;i+=2)    </p>
+  <p style="text-indent:2em;">for(j=i+2;j<=k;__[2]__)    </p>
+<p style="text-indent:2em;">if(_[3]_)    </p>
+<p style="text-indent:2em;">{ </p>
+<p style="text-indent:2em;">t=a[i];
+  a[i]=a[j];
+  a[j]=t;  </p>
+<p style="text-indent:2em;">}
+  puts(a);
+  return 0;  </p>
+<p style="text-indent:2em;">}</p>
+  <p style="text-indent:2em;"> [1]__________</p>
+  <p style="text-indent:2em;"> [2]__________    </p>
+  <p style="text-indent:2em;">[3]__________ </p>
+  <p style="text-indent:2em;">2.以下函数creat用来建立一个带头结点的单向链表，新产生的结点总是插在链表的末端，单链表的头指针作为函数的返回。请在标号[3]，[4]，[5]空白处补充完整。
+    s</p>
+  <p style="text-indent:2em;">truct list    </p>
+  <p style="text-indent:2em;">{    </p>
+  <p style="text-indent:2em;">char date;
+    struct list *next;    </p>
+  <p style="text-indent:2em;">};</p>
+  <p style="text-indent:2em;"> __[4]__create()    </p>
+  <p style="text-indent:2em;">{    </p>
+  <p style="text-indent:2em;">struct list *h,*p,*q;
+    char ch;
+    h=(struct list * )malloc(sizeof(struct list));</p>
+  <p style="text-indent:2em;"> p = q = h;
+    ch = getchar();
+    while(ch !='？'）  </p>
+  <p style="text-indent:2em;">{    </p>
+  <p style="text-indent:2em;">p = (struct list * )malloc(sizeof(struct list));
+    p ->date = ch;
+    q ->next = p;
+    ___[5]____;
+    ch = getchar();</p>
+  <p style="text-indent:2em;"> }    </p>
+  <p style="text-indent:2em;">p -next = null;</p>
+  <p style="text-indent:2em;"> ____[6]___;    </p>
+  <p style="text-indent:2em;">}    </p>
+  <p style="text-indent:2em;">[4]__________</p>
+  <p style="text-indent:2em;"> [5]__________    </p>
+  <p style="text-indent:2em;">[6]__________    </p>
+  <p style="text-indent:2em;">答案：    </p>
+  <p style="text-indent:2em;">1.
+    [1]strlen(a) [2]j+=2
+    [3]a[i]>a[j]</p>
+  <p style="text-indent:2em;"> 2.
+    [4]sruct list *
+    [5]q = p
+    [6]return h</p>
+</div>
+<div id="footer">我是底部</div>
+</body>
+</html>
