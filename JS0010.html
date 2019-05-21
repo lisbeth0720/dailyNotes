@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <script>
+        //输入一个字符，判断他的种类
+        var n=prompt("请输入一个数");
+       // if(("a"<=n<="z")||("A"<=n<"Z")){
+         //   console.log("n是字母");
+      //  }
+       // if(n>=0&&n<=9)
+      //  {
+         //   console.log("n是数字");
+     //   }
+       // if("\u4e00"<=n<="\u9fa5")
+      //  {
+        //    console.log("n是汉字")
+     //   }
+     //   else{
+     //       console.log("输入有误，请重新输入");
+    //    }
+        console.log(
+            (("a"<=n<="z")||("A"<=n<"Z"))?"n是字母":(n>=0&&n<=9)?"n是数字":((n>="\u4e00")&&(n<="\u9fa5"))?"n是汉字":"您的输入有误，请重新输入"
+        );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
