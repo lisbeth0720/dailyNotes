@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>偶数行变色</title>
+    <link href="#" rel="stylesheet">
+    <style>
+        .blue{
+            background-color:#ccccff;
+        }
+    </style>
+    <script>
+        //当页面加载完成后，自动触发
+        window.onload=function() {
+            //先按id找到table对象
+            var table = document.getElementById("data");
+            //再找到taboe对象的第一个tbody对象
+            //table.tbodies:返回table对象中包含的所有tbody对象
+            var tbody = table.tBodies[0];
+            //遍历tbody下的所有子节点
+            //两个变量：i从0开始，到childNode.length
+            //         r从0开始,记录现在第几个tr
+            for (var i = 0, r = 0; i < tbody.childNodes.length; i++) {
+                //如果当前节点是TR节点
+                if(tbody.childNodes[i].nodeName=="TR"){
+                    if(r%2==1){
+                        tbody.childNodes[i].chlidName=="blue";
+                    }
+                    r++;
+                }
+                //如果r%2==1
+                //修改当前节点的className属性为blue
+            }
+        }
+    </script>
+</head>
+<body>
+   <table id="data">
+      <thead>
+         <tr>
+             <th>
+               姓名
+             </th>
+             <th>
+                 工资
+             </th>
+             <th>
+                 入职时间
+             </th>
+             <th>
+                 操作
+             </th>
+         </tr>
+      </thead>
+       <tbody>
+          <tr>
+              <td>
+               清风
+              </td>
+              <th>$3500</th>
+              <td>2010-10-24</td>
+              <td>
+                  <a href="#">删除</a>
+              </td>
+
+          </tr>
+       <tr>
+           <td>沐雪</td>
+           <th>$3000</th>
+           <td>2011-07-20</td>
+           <td>
+               <a href="#">删除</a>
+           </td>
+
+       </tr>
+          <tr>
+              <td>
+                  TOM
+              </td>
+              <th>$3500</th>
+              <td>2010-10-24</td>
+              <td>
+                  <a href="#">删除</a>
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  JUNE
+              </td>
+              <th>$3500</th>
+              <td>2010-10-24</td>
+              <td>
+                  <a href="#">删除</a>
+              </td>
+
+          </tr>
+          <tr>
+              <td>
+                  Summer
+              </td>
+              <th>$3500</th>
+              <td>2010-10-24</td>
+              <td>
+                  <a href="#">删除</a>
+              </td>
+
+          </tr>
+       </tbody>
+   </table>
+</body>
+</html>
